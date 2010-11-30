@@ -1,0 +1,12 @@
+#summary Read Me
+#labels Featured,Phase-Deploy
+
+= Introduction =
+
+Installation:
+
+Download and run the installer.  When you run the program you will get an error asking for "ppython.exe", simply click browse and select "python.exe".
+
+The Stage Editor:
+
+To create blocks simply click on any square and select a block type and mass.  If you set the mass to zero the block will be immovable and float.  After you are finished press F5 to save the level in the Blox level editor format.  Press F6 to load.  When you are ready to export the level for Blox, press S and save the file to C:\Blox\game\stages
