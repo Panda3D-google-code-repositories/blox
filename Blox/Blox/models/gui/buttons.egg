@@ -1,0 +1,113 @@
+<Comment> {
+  "egg-texture-cards -o buttonMap.egg -p 240,240 C:/startup.png C:/startdown.png C:/exitup.png C:/exitdown.png"
+}
+<Texture> startup {
+  "gfx/gui/startup.png"
+}
+<Texture> startdown {
+  "gfx/gui/startdown.png"
+}
+<Texture> exitup {
+  "gfx/gui/exitup.png"
+}
+<Texture> exitdown {
+  "gfx/gui/exitdown.png"
+}
+<Group> {
+  <Switch> { 1 }
+  <Scalar> fps { 2 }
+  <VertexPool> vpool {
+    <Vertex> 0 {
+      -0.533333 0.266667 0
+      <UV> { 0 1 }
+    }
+    <Vertex> 1 {
+      -0.533333 -0.266667 0
+      <UV> { 0 0 }
+    }
+    <Vertex> 2 {
+      0.533333 -0.266667 0
+      <UV> { 1 0 }
+    }
+    <Vertex> 3 {
+      0.533333 0.266667 0
+      <UV> { 1 1 }
+    }
+    <Vertex> 4 {
+      -0.533333 0.266667 0
+      <UV> { 0 1 }
+    }
+    <Vertex> 5 {
+      -0.533333 -0.266667 0
+      <UV> { 0 0 }
+    }
+    <Vertex> 6 {
+      0.533333 -0.266667 0
+      <UV> { 1 0 }
+    }
+    <Vertex> 7 {
+      0.533333 0.266667 0
+      <UV> { 1 1 }
+    }
+    <Vertex> 8 {
+      -0.533333 0.266667 0
+      <UV> { 0 1 }
+    }
+    <Vertex> 9 {
+      -0.533333 -0.266667 0
+      <UV> { 0 0 }
+    }
+    <Vertex> 10 {
+      0.533333 -0.266667 0
+      <UV> { 1 0 }
+    }
+    <Vertex> 11 {
+      0.533333 0.266667 0
+      <UV> { 1 1 }
+    }
+    <Vertex> 12 {
+      -0.533333 0.266667 0
+      <UV> { 0 1 }
+    }
+    <Vertex> 13 {
+      -0.533333 -0.266667 0
+      <UV> { 0 0 }
+    }
+    <Vertex> 14 {
+      0.533333 -0.266667 0
+      <UV> { 1 0 }
+    }
+    <Vertex> 15 {
+      0.533333 0.266667 0
+      <UV> { 1 1 }
+    }
+  }
+  <Group> startup {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { startup }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> startdown {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { startdown }
+      <VertexRef> { 4 5 6 7 <Ref> { vpool } }
+    }
+  }
+  <Group> exitup {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { exitup }
+      <VertexRef> { 8 9 10 11 <Ref> { vpool } }
+    }
+  }
+  <Group> exitdown {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { exitdown }
+      <VertexRef> { 12 13 14 15 <Ref> { vpool } }
+    }
+  }
+}
